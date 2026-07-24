@@ -1,8 +1,28 @@
 aid: bluebook
 name: Bluebook
-description: 'Bluebook is a company surfaced as a portfolio company of eqt-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Bluebook is a Stockholm, Sweden based software company building AI agents for accounting
+  firms, accountants, and CFOs. The platform automates accounting workflows — reconciliations, accruals,
+  accounts payable and receivable, month-end close, reporting, and accounting research — with the stated
+  goal of a "zero-day close", and integrates with the general ledgers firms already run on, notably
+  QuickBooks and NetSuite. The product surface is organized around Background Agents, Checklists (tasks,
+  delegation, human-in-the-loop approvals, month-end close), and an Assistant covering FP&A, flux analysis,
+  and accounting research. Founded in 2024 by Philip Andersson (CEO), Jonathan Andersson (COO), and Filip
+  Stål (CTO), Bluebook went through Y Combinator (Winter 2025) and raised a $3M pre-seed led by EQT
+  Ventures with participation from Y Combinator and angel investors from Affirm, OpenAI, and ElevenLabs.
+  Bluebook is a product company, not an API provider: as of this enrichment pass it publishes no public
+  developer program, API documentation, machine-readable specification, or SDKs.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://framerusercontent.com/images/FezgjIHDeY9FbaDMWznCpKZHo74.jpg
 url: https://raw.githubusercontent.com/api-evangelist/bluebook/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +32,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Accounting
+- Artificial Intelligence
+- AI Agents
+- Financial Close
+- Bookkeeping
+- Sweden
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+common:
+- type: DomainSecurity
+  url: security/bluebook-domain-security.yml
+- type: LLMsTxt
+  url: llms/bluebook-llms.txt
+- type: Website
+  url: https://getbluebook.com
+- type: Careers
+  url: https://bluebookhq.notion.site/Work-at-Bluebook-19239a61927080c882a5caf3549965bc
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/bluebook-2eaf
+- type: LinkedIn
+  url: https://www.linkedin.com/company/get-bluebook
+- type: Twitter
+  url: https://x.com/bluebookhq
+- type: YCombinator
+  url: https://www.ycombinator.com/companies/bluebook

@@ -1,0 +1,46 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: getbluebook.com
+  https: true
+  tls_version: TLSv1.3
+  cert_issuer: "Let's Encrypt E8"
+  cert_expires: Aug 25 13:29:40 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+  http_status: 404
+  server: Framer
+  note: >-
+    Apex resolves and terminates TLS correctly with HSTS, but the Framer-hosted
+    marketing site returned HTTP 404 for every path probed on 2026-07-20
+    (/, /about, /security, /blog, /pricing, /privacy, /terms, /careers, /login,
+    /contact). The Internet Archive's last successful capture is 2026-04-16.
+    The site appears unpublished or mid-migration rather than the domain lost.
+- host: agent.getbluebook.com
+  https: false
+  https_error: certificate expired
+  cert_issuer: "Let's Encrypt R12"
+  cert_expires: May 18 18:34:29 2026 GMT
+  http_status: 404
+  hosting: Vercel
+  note: >-
+    Application host referenced by the archived site's "Log in" link
+    (https://agent.getbluebook.com/login). TLS certificate expired
+    2026-05-18, so the host fails verification; with verification disabled it
+    returns 404.
+- host: api.getbluebook.com
+  https: false
+  https_error: TLS handshake failed
+  hosting: Render (CNAME bluebook-api.onrender.com)
+  note: >-
+    DNS still delegates this host to Render, but the TLS handshake fails
+    entirely, consistent with a deleted or suspended service behind a stale
+    DNS record. No API surface was reachable.
+domains:
+- domain: getbluebook.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

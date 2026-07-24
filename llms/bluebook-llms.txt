@@ -1,0 +1,53 @@
+# Bluebook
+
+> Bluebook builds AI agents for accounting firms, accountants, and CFOs. The platform automates accounting workflows — reconciliations, accruals, accounts payable and receivable, month-end close, reporting, and accounting research — toward a "zero-day close", integrating with the general ledgers firms already run on. Bluebook is a Stockholm, Sweden company founded in 2024, a Y Combinator Winter 2025 company, and raised a $3M pre-seed led by EQT Ventures.
+
+## Important note for agents
+
+Bluebook is a **product company, not an API provider**. As of 2026-07-20 it publishes:
+
+- no public developer portal, API documentation, or API reference
+- no machine-readable API description (OpenAPI, AsyncAPI, GraphQL schema, or Protobuf)
+- no SDKs or client libraries in npm, PyPI, Maven Central, NuGet, pkg.go.dev, RubyGems, Packagist, or crates.io
+- no CLI, no MCP server, no published Agent Skills
+- no /.well-known/ discovery documents and no llms.txt of its own
+
+Do not synthesize Bluebook API calls. There is no public API contract to call.
+
+## Site availability caveat
+
+At the time of this writing the Bluebook marketing site at https://getbluebook.com resolves and terminates TLS correctly (Framer hosting, HSTS enabled) but returns HTTP 404 for every path, including the homepage. The Internet Archive's last successful capture is 2026-04-16. The company's external profiles (Y Combinator, EQT, LinkedIn, X, and its Notion careers page) remain live, so this reads as an unpublished or migrating site rather than a shut-down company. Content below describing the product surface is drawn from the archived site and from public funding coverage.
+
+## Product surface
+
+- Background Agents: accounts payable, accounts receivable, reconciliation, auditor, and reporting agents that run in the background against a firm's ledger.
+- Checklists: tasks, delegation, human-in-the-loop approvals, and month-end close orchestration.
+- Assistant: FP&A, flux analysis, and accounting research.
+
+## Integrations
+
+- QuickBooks
+- NetSuite
+
+## Company
+
+- Founded: 2024, Stockholm, Sweden
+- Founders: Philip Andersson (CEO), Jonathan Andersson (COO), Filip Stål (CTO)
+- Y Combinator: Winter 2025 — https://www.ycombinator.com/companies/bluebook
+- Funding: $3M pre-seed led by EQT Ventures, with Y Combinator and angels from Affirm, OpenAI, and ElevenLabs
+- Investor profile: https://eqtgroup.com/about/current-portfolio/bluebook
+
+## Links
+
+- Website: https://getbluebook.com (currently returning 404)
+- Application host: https://agent.getbluebook.com (TLS certificate expired 2026-05-18)
+- Careers: https://bluebookhq.notion.site/Work-at-Bluebook-19239a61927080c882a5caf3549965bc
+- LinkedIn: https://www.linkedin.com/company/get-bluebook
+- X: https://x.com/bluebookhq
+- Crunchbase: https://www.crunchbase.com/organization/bluebook-2eaf
+
+## Provenance
+
+- generated: 2026-07-20
+- method: generated
+- source: API Evangelist catalog (all/bluebook/apis.yml) plus live probes and archived getbluebook.com content
