@@ -11,6 +11,17 @@ description: 'Bluebook is a Stockholm, Sweden based software company building AI
   Ventures with participation from Y Combinator and angel investors from Affirm, OpenAI, and ElevenLabs.
   Bluebook is a product company, not an API provider: as of this enrichment pass it publishes no public
   developer program, API documentation, machine-readable specification, or SDKs.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
